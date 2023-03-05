@@ -3,17 +3,26 @@
     <section class="register">
         <form>
             <div class="group">
-                <input type="text"><span class="highligt"></span><span class="bar"></span>
-                <label>Namn</label>
-                
+              <input type="text"><span class="highlight"></span><span class="bar"></span>
+              <label>Namn</label>
             </div>
             <div class="group">
-                <input type="text"><span class="highligt"></span><span class="bar"></span>
-                <label>Epost</label>
+              <input type="email"><span class="highlight"></span><span class="bar"></span>
+              <label>Epost</label>
             </div>
-            <button type="submit" class="button buttonBlue">Registrera mig</button> 
-            <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+            <div class="group">
+                <input type="password"><span class="highlight"></span><span class="bar"></span>
+                <label>Lösenord</label>
+            </div>
+            <div class="group">
+                <input type="password"><span class="highlight"></span><span class="bar"></span>
+                <label>Upprepa lösenord</label>
+            </div>
+            <button type="button" class="button buttonBlue">Registrera mig
+              <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
             </button>
-        </form>
+          </form>
     </section>
 </main>
+
+<script src="../static/jsfrontend/register.js" type="module"></script>

@@ -18,7 +18,7 @@ h1 { color: #636363; }
 h3 { color: #4a89dc; }
 
 form {
-	width: 380px;
+	width: 450px;
 	margin: 4em auto;
 	padding: 3em 2em 2em 2em;
 	background: #fafafa;
@@ -28,7 +28,8 @@ form {
 
 .group { 
 	position: relative; 
-	margin-bottom: 45px; 
+	margin-bottom: 45px;
+	width: 40%; 
 }
 
 input {
@@ -50,13 +51,13 @@ input:focus { outline: none; }
 /* Label */
 
 label {
-	color: #999; 
+	color: #3b3b3b; 
 	font-size: 18px;
 	font-weight: normal;
 	position: absolute;
 	pointer-events: none;
 	left: 5px;
-	top: 10px;
+	top: -10px;
 	transition: all 0.2s ease;
 }
 
@@ -65,8 +66,7 @@ label {
 
 input:focus ~ label, input.used ~ label {
 	top: -20px;
-  transform: scale(.75); left: -2px;
-	/* font-size: 14px; */
+    transform: scale(.75); left: -2px;
 	color: #4a89dc;
 }
 
@@ -138,6 +138,7 @@ input:focus ~ .highlight {
   vertical-align: middle;
   color: #fff;
   font-size: 16px;
+  font-weight: bold;
   line-height: 20px;
   -webkit-font-smoothing: antialiased;
   text-align: center;
