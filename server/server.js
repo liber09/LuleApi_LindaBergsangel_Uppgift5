@@ -88,6 +88,8 @@ app.get("/api/upcoming-screenings/:id", async (req, res) => {
 
 app.get(
   [
+    "/register",
+    "/login",
     "/openingHours",
     "/bistro-menu",
     "/booking",
