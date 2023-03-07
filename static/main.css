@@ -1061,7 +1061,7 @@ input:focus ~ label, input.used ~ label {
 .bar {
   position: relative;
   display: block;
-  width: 100%;
+  width: 78%;
 }
 
 .bar:before, .bar:after {
@@ -1190,4 +1190,7 @@ input:focus ~ .highlight {
     padding-bottom: 200%;
     opacity: 0;
   }
+}
+.forgotPassword {
+  text-align: center;
 }
