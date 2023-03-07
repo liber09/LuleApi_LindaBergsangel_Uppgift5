@@ -33,9 +33,9 @@ html {
 @media screen and (min-width: 1400px) {
   .header .top-header .logotype {
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 0;
-    width: 17em;
+    width: 15em;
     height: auto;
   }
 }
@@ -1193,4 +1193,20 @@ input:focus ~ .highlight {
 }
 .forgotPassword {
   text-align: center;
+  text-decoration: none;
+}
+.forgotPassword a {
+  text-decoration: none;
+}
+.forgotPassword a:visited {
+  color: black;
+  text-decoration: none;
+}
+.forgotPassword a:hover {
+  color: black;
+  text-decoration: none;
+}
+.forgotPassword a:active {
+  color: black;
+  text-decoration: none;
 }

@@ -91,6 +91,7 @@ app.get(
     "/register",
     "/login",
     "/resetPassword",
+    "/newPassword",
     "/openingHours",
     "/bistro-menu",
     "/booking",
