@@ -1210,3 +1210,7 @@ input:focus ~ .highlight {
   color: black;
   text-decoration: none;
 }
+
+#StrengthDisp {
+  display: none;
+}
