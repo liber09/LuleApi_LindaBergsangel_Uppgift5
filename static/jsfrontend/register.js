@@ -64,13 +64,13 @@ $(window, document, undefined).ready(function() {
   function StrengthChecker(PasswordParameter) {
     if(strongPassword.test(PasswordParameter)) {
         strengthBadge.style.backgroundColor = "green";
-        strengthBadge.textContent = 'Strong';
+        strengthBadge.textContent = 'starkt';
     } else if(mediumPassword.test(PasswordParameter)) {
         strengthBadge.style.backgroundColor = 'blue';
-        strengthBadge.textContent = 'Medium';
+        strengthBadge.textContent = 'okej';
     } else {
         strengthBadge.style.backgroundColor = 'red';
-        strengthBadge.textContent = 'Weak';
+        strengthBadge.textContent = 'svagt';
     }
 }
 
