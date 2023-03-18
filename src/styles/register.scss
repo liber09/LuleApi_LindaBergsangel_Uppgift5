@@ -230,3 +230,9 @@ input:focus ~ .highlight {
 #StrengthDisp{
 	display: none;
 }
+#pwdMatch{
+	display: none;
+	font-weight: 600;
+	padding: 5px;
+	color: red;
+}

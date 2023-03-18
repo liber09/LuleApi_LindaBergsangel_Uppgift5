@@ -1,5 +1,7 @@
 let timeout;
 let password = document.getElementById('PassEntry');
+let confirmPassword = document.getElementById('confirmPwd');
+let pwdMatchBadge = document.getElementById('pwdMatch');
 let strengthBadge = document.getElementById('StrengthDisp');
 let strongPassword = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})')
 let mediumPassword = new RegExp('((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{6,}))|((?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])(?=.{8,}))')
@@ -12,6 +14,14 @@ password.addEventListener("focusout", () => {
       strengthBadge.style.display != 'block';
   } else {
       strengthBadge.style.display = 'none';
+  }
+});
+
+confirmPassword.addEventListener("focusout", () => {
+  if(password.value !== confirmPassword.value){
+    pwdMatchBadge.style.display = 'block';
+  }else{
+    pwdMatchBadge.style.display = 'none';
   }
 });
 
